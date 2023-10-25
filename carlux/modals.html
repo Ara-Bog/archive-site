@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/modals.css">
+</head>
+<body>
+    <section class="curtain">
+        <div class="curtain_wrap">
+            <div class="curtain_wrap__nav">
+                <div class="curtain_wrap__nav_wrap">
+                    <a href="#">Гарантия и возврат товара</a>
+                    <a href="#">Доставка и оплата</a>
+                    <a href="#">Контакты</a>
+                </div>
+            </div>
+            <div class="curtain_wrap__local">
+                <img src="assets/icons/map_point.svg" alt="">
+                <p>Владивосток</p>
+            </div>
+        </div>
+    </section>
+    <section class="header">
+        <div class="header_wrap">
+            <a href="#" class="header_wrap__logo">
+                <img src="assets/icons/logo.svg" alt="">
+            </a>
+            <div class="header_wrap__nav">
+                <div class="button_regular button_regular--active">
+                    <a id="menu"><img src="assets/icons/sandwich-desc.svg" alt="">Каталог</a>
+                </div>
+                <div class="header_wrap__nav_search">
+                    <input type="text" placeholder="Хочу купить">
+                    <img src="assets/icons/loupe.svg" alt="">
+                </div>
+            </div>
+            <div class="header_wrap__profile">
+                <a href="#" class="header_wrap__profile__account">
+                    <img src="assets/icons/profile.svg" alt="">
+                    Войти
+                </a>
+                <a href="#" class="header_wrap__profile__basket">
+                    <img src="assets/icons/basket.svg" alt="">
+                    <div class="basket_count">5</div>
+                    Корзина
+                </a>
+            </div>
+        </div>
+    </section>
+    <style type="text/css">
+        .del_block_wrap {
+            display: flex; 
+            flex-direction: column;
+            background-color: red;
+        }
+
+        .del_block a {
+            font-size: 20px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+    </style>
+    <section class="del_block">
+        <div class="del_block_wrap">
+            <a class="modal-city">города</a>
+            <a class="modal-productHas">наличие товара</a>
+        </div>
+    </section>
+    <div id="modal-productHas" class="modal modal-full">
+        <div class="modal_wrap">
+            <div class="productHas">
+                <h5>Наличе в магазинах</h5>
+                <div class="product_wrap__description_storage">
+                    <div class="product_wrap__description_storage_item">
+                        <p>Владивосток</p>
+                        <span>В наличии</span>
+                    </div>
+                    <div class="product_wrap__description_storage_item storage_item--disabled">
+                        <p>Хабаровск</p>
+                        <span>Нет в наличии</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <div id="modal-city" class="modal modal-notice">
+        <div class="modal_wrap">
+            <div class="city">
+                <span>Ваш город Владивосток?</span>
+                <div class="button_regular button_regular--active">
+                    <a class="close-modal">Да</a>
+                </div>
+                <div class="button_regular">
+                    <a href="#" class="modal-change_city">Изменить</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="modal-change_city" class="modal modal-full">
+        <div class="modal_wrap">
+            <div class="change_city">
+                <div class="close-modal">
+                    <img src="assets/icons/cross_modal.svg" alt="">
+                </div>
+                <h5>Выбери свой город</h5>
+                <div class="change_city__list_city close-modal--city">
+                    <span class="active-city" >Владивосток</span>
+                    <span>Уссурийск</span>
+                    <span>Артем</span>
+                    <span>Хабаровск</span>
+                    <span>Моего города нет</span>
+                </div>
+            </div>
+        </div>
+        <div class="shadow"></div>
+    </div>
+    <div class="menu-categories">
+        <div class="menu-categories_wrap">
+            <div class="menu-categories_item">
+                <h5>Чехлы</h5>
+                <a href="#">Накидки</a>
+                <a href="#">Майки</a>
+                <a href="#">Полные чехлы</a>
+            </div>
+            <div class="menu-categories_item">
+                <h5>Краска</h5>
+                <a href="#">Алкидная эмаль</a>
+                <a href="#">Меламиноалкидная медь</a>
+                <a href="#">Целлюлозная</a>
+                <a href="#">Нитрокраска</a>
+                <a href="#">Акриловая автомобильная краска</a>
+                <a href="#">На водной основе</a>
+                <a href="#">Металлики и перламутры</a>
+            </div>
+            <div class="menu-categories_item">
+                <h4>Автоаксессуары</h4>
+                <a href="#">Домкраты</a>
+                <a href="#">Лебедки</a>
+                <a href="#">Предметы по уходу за автомобилем</a>
+                <a href="#">Набор автомобилиста</a>
+                <a href="#">Внешние аксессуары</a>
+                <a href="#">Аксессуары для салона</a>
+            </div>
+            <div class="menu-categories_item">
+                <h5>Каркасные шторы</h5>
+                <a href="#">Солнцезащитные</a>
+                <a href="#">Пластиковые</a>
+                <a href="#">Матерчатые</a>
+            </div>
+            <div class="menu-categories_item">
+                <h5>Коврики</h5>
+                <a href="#">Коврики EVA</a>
+                <a href="#">Формовнный пластик</a>
+                <a href="#">Полиуретановые</a>
+                <a href="#">Экокожа</a>
+                <a href="#">Натуральная кожа</a>
+                <a href="#">Жаккардовая ткань</a>
+            </div>
+            <div class="menu-categories_item">
+                <h5>Коврики</h5>
+                <a href="#">Солнцезащитные</a>
+                <a href="#">Формовнный пластик</a>
+                <a href="#">Полиуретановые</a>
+                <a href="#">Полиуретановые</a>
+                <a href="#">Полиуретановые</a>
+                <a href="#">Полиуретановые</a>
+            </div>
+            <div class="menu-categories_item">
+                <h5>Коврики</h5>
+                <a href="#">Солнцезащитные</a>
+                <a href="#">Пластиковые</a>
+                <a href="#">Матерчатые</a>
+                <a href="#">Полиуретановые</a>
+                <a href="#">Полиуретановые</a>
+                <a href="#">Полиуретановые</a>
+                <a href="#">Полиуретановые</a>
+            </div>
+            <div class="menu-categories_item">
+                <h5>Коврики</h5>
+                <a href="#">Солнцезащитные</a>
+                <a href="#">Пластиковые</a>
+                <a href="#">Матерчатые</a>
+            </div>
+            <div class="menu-categories_item">
+                <h5>Коврики</h5>
+                <a href="#">Солнцезащитные</a>
+                <a href="#">Пластиковые</a>
+                <a href="#">Матерчатые</a>
+                <a href="#">Солнцезащитные</a>
+                <a href="#">Пластиковые</a>
+                <a href="#">Матерчатые</a>
+            </div>
+            <div class="menu-categories_item">
+                <h5>Коврики</h5>
+                <a href="#">Солнцезащитные</a>
+                <a href="#">Пластиковые</a>
+                <a href="#">Матерчатые</a>
+            </div>
+            <div class="menu-categories_item">
+                <h5>Коврики</h5>
+                <a href="#">Солнцезащитные</a>
+                <a href="#">Формовнный пластик</a>
+                <a href="#">Полиуретановые</a>
+                <a href="#">Полиуретановые</a>
+                <a href="#">Полиуретановые</a>
+                <a href="#">Полиуретановые</a>
+            </div>
+            <div class="menu-categories_item">
+                <h5>Коврики</h5>
+                <a href="#">Солнцезащитные</a>
+                <a href="#">Пластиковые</a>
+                <a href="#">Матерчатые</a>
+                <a href="#">Полиуретановые</a>
+                <a href="#">Полиуретановые</a>
+                <a href="#">Полиуретановые</a>
+                <a href="#">Полиуретановые</a>
+            </div>
+            <div class="menu-categories_item">
+                <h5>Коврики</h5>
+                <a href="#">Солнцезащитные</a>
+                <a href="#">Пластиковые</a>
+                <a href="#">Матерчатые</a>
+            </div>
+            <div class="menu-categories_item">
+                <h5>Коврики</h5>
+                <a href="#">Солнцезащитные</a>
+                <a href="#">Пластиковые</a>
+                <a href="#">Матерчатые</a>
+                <a href="#">Солнцезащитные</a>
+                <a href="#">Пластиковые</a>
+                <a href="#">Матерчатые</a>
+            </div>
+            <div class="menu-categories_item">
+                <h5>Коврики</h5>
+                <a href="#">Солнцезащитные</a>
+                <a href="#">Пластиковые</a>
+                <a href="#">Матерчатые</a>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="assets/js/modals.js"></script>
+</body>
+</html>

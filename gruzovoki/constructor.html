@@ -1,0 +1,462 @@
+<!DOCTYPE HTML PUBLIC>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="assets/css/fonts.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+        <section class="menu">
+            <div class="menu_wrap">
+                <div class="logo">
+                    <a href="index.html" >
+                        <img src="assets/icons/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="menu_wrap__nav menu-close">
+                    <div class="menu_wrap__nav__links">
+                        <a href="#">Каталог</a>
+                        <a href="#">Конструктор</a>
+                        <a href="#">Аукционы</a>
+                        <a href="#">Компания</a>
+                        <a href="#">Менеджеры</a>
+                        <a href="#">Новости</a>
+                    </div>
+
+                    <div class="menu_wrap__nav__button"> 
+                        <!-- menu-open/menu-close -->
+                        <div class="menu_wrap__nav__button-open">
+                            <img src="assets/icons/burger.png" alt="">
+                        </div>
+                        <div class="menu_wrap__nav__button-close">
+                            <img src="assets/icons/cross.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="crumb">
+            <div class="crumb_wrap">
+                <div class="crumb_wrap_block">
+                    <a href="index.html">Главная</a>
+                    <span>Конструктор</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- ТУТ ОБРАТИ ВНИМАНИЕ НА БЛОК constructor-form__listCars -->
+        <section class="constructor">
+            <div class="constructor_wrap">
+                <h3>Выбирайте сами, каким будет ваш транспорт</h3>
+                <div class="constructor_wrap_content">
+                    <!-- сделать нормальное сияние (вроде сделал) -->
+                    <div class="constructor_wrap__car">
+                        <img src="assets/img/construcror_car.png" alt="">
+                        <div class="constructor_wrap__car--glow">
+                            <img src="assets/icons/glov_car.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="constructor_wrap__content">
+                        <div class="constructor_wrap__type">
+                            <span id="japan" class="constructor_wrap__type--active">Японская техника</span>
+                            <span id="korea">корейская техника</span>
+                        </div>
+                        <div class="constructor_wrap__steps">
+                            <span id="chassis" class="constructor_wrap__steps--active">шасси</span>
+                            <span id="carcase">Кузов</span>
+                            <span id="confirm_construct">отправить</span>
+                        </div>
+                        <form action="" class="constructor-form form-active_step--chassis form-active_type--japan">
+                            <div class="constructor-form__chassis">
+                                <!-- посмотри этот блок, когда тест в несколько строк -->
+                                <div class="constructor-form__listCars">
+                                    <!-- for для label и id для input надо еще -->
+                                    <!-- не стал добавлять, т.к. ты всеравно переделывать будешь -->
+                                    <!-- добавил idшники, чтобы фильтровать по типу-->
+                                    <!-- такая хрень проканает и с другими блоками (если это будет необходимо) -->
+                                    <!-- value ОБЯЗАТЕЛЕН!!!! -->
+                                    <label id="constructor-type--japan" class="listCars_el">
+                                        <input type="radio" name="chassis" checked value="NPR 400 jap">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>NPR 400 jap</span>
+                                        </div>
+                                    </label>
+                                    <label id="constructor-type--japan" class="listCars_el">
+                                        <input type="radio" name="chassis" value="NQR 500 SWB jap">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>NQR 500 SWB jap</span>
+                                        </div>
+                                    </label>
+                                    <label id="constructor-type--japan" class="listCars_el">
+                                        <input type="radio" name="chassis" value="NQR 500 SWB jap">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>NQR 500 SWB jap</span>
+                                        </div>
+                                    </label>
+                                    <label id="constructor-type--japan" class="listCars_el">
+                                        <input type="radio" name="chassis" value="NQR 500 SWB jap">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>NQR 500 SWB jap</span>
+                                        </div>
+                                    </label>
+
+                                    <label id="constructor-type--korea" class="listCars_el">
+                                        <input type="radio" name="chassis" value="NQR 500 SWB kor">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>NQR 500 SWB kor</span>
+                                        </div>
+                                    </label>
+                                    <label id="constructor-type--korea" class="listCars_el">
+                                        <input type="radio" name="chassis" value="NQR 500 SWB kor">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>NQR 500 SWB kor</span>
+                                        </div>
+                                    </label>
+                                    <label id="constructor-type--korea" class="listCars_el">
+                                        <input type="radio" name="chassis" value="NQR 500 SWB kor">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>NQR 500 SWB kor</span>
+                                        </div>
+                                    </label>
+                                    <label id="constructor-type--korea" class="listCars_el">
+                                        <input type="radio" name="chassis" value="NQR 500 SWB kor">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>NQR 500 SWB kor</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <p class="constructor-form-title">Двигатель</p>
+                                <div class="constructor-form__block">
+                                    <!-- таже история, что и выше была -->
+                                    <label class="form__block_el" id="constructor-type--japan">
+                                        <input type="radio" name="engine" checked value="Mitsubishi 4G6">
+                                        <div class="form__block_el_content">
+                                            Mitsubishi 4G6
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el" id="constructor-type--japan">
+                                        <input type="radio" name="engine" value="Honda D15B">
+                                        <div class="form__block_el_content">
+                                            Honda D15B
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el" id="constructor-type--japan">
+                                        <input type="radio" name="engine" value="Toyota 3S-FE">
+                                        <div class="form__block_el_content">
+                                            Toyota 3S-FE
+                                        </div>
+                                    </label>
+
+                                    <!-- для теста -->
+                                    <label class="form__block_el" id="constructor-type--korea">
+                                        <input type="radio" name="engine" value="qwe">
+                                        <div class="form__block_el_content">
+                                            qwe
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el" id="constructor-type--korea">
+                                        <input type="radio" name="engine" value="asd">
+                                        <div class="form__block_el_content">
+                                            asd
+                                        </div>
+                                    </label>
+                                </div>
+                                <p class="constructor-form-title">Вид трансмиссии</p>
+                                <div class="constructor-form__block">
+                                    <!-- таже история, что и выше была -->
+                                    <label class="form__block_el">
+                                        <input type="radio" name="transmission" checked value="Электрический">
+                                        <div class="form__block_el_content">
+                                            Электрический
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="transmission" value="Механический">
+                                        <div class="form__block_el_content">
+                                            Механический
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="transmission" value="Гидравлический">
+                                        <div class="form__block_el_content">
+                                            Гидравлический
+                                        </div>
+                                    </label>
+                                </div>
+                                <p class="constructor-form-title">Грузоподъёмность</p>
+                                <div class="constructor-form__block">
+                                    <!-- таже история, что и выше была -->
+                                    <label class="form__block_el">
+                                        <input type="radio" name="carrying" value="До 10 Т" checked>
+                                        <div class="form__block_el_content">
+                                            До 10 Т
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="carrying" value="20 Т">
+                                        <div class="form__block_el_content">
+                                            20 Т
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="carrying" value="30 Т">
+                                        <div class="form__block_el_content">
+                                            30 Т
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="carrying" value="40 Т">
+                                        <div class="form__block_el_content">
+                                            40 Т
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="constructor-form--next-step button-default">
+                                    <a>Продолжить</a>
+                                </div>
+                            </div>
+                            <div class="constructor-form__carcase">
+                                <!-- посмотри этот блок, когда тест в несколько строк -->
+                                <div class="constructor-form__listCars">
+                                    <!-- for для label и id для input надо еще -->
+                                    <!-- не стал добавлять, т.к. ты всеравно переделывать будешь -->
+                                    <label class="listCars_el">
+                                        <input type="radio" name="carcase" value="Промтоварный" checked>
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>Промтоварный</span>
+                                        </div>
+                                    </label>
+                                    <label class="listCars_el">
+                                        <input type="radio" name="carcase" value="Бортовой">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>Бортовой</span>
+                                        </div>
+                                    </label>
+                                    <label class="listCars_el">
+                                        <input type="radio" name="carcase" value="вакуумная">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>вакуумная</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <p class="constructor-form-title">грузоподъемность стрелы</p>
+                                <div class="constructor-form__block">
+                                    <!-- таже история, что и выше была -->
+                                    <label class="form__block_el">
+                                        <input type="radio" name="lifting" value="1.5 Т" checked>
+                                        <div class="form__block_el_content">
+                                            1.5 Т
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="lifting" value="3 Т">
+                                        <div class="form__block_el_content">
+                                            3 Т
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="lifting" value="6 Т">
+                                        <div class="form__block_el_content">
+                                            6 Т
+                                        </div>
+                                    </label>
+                                </div>
+                                <p class="constructor-form-title">дЛИНА СТРЕЛЫ</p>
+                                <div class="constructor-form__block">
+                                    <!-- таже история, что и выше была -->
+                                    <label class="form__block_el">
+                                        <input type="radio" name="length" value="5 М" checked>
+                                        <div class="form__block_el_content">
+                                            5 М
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="length" value="10 М">
+                                        <div class="form__block_el_content">
+                                            10 М
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="length" value="15 М">
+                                        <div class="form__block_el_content">
+                                            15 М
+                                        </div>
+                                    </label>
+                                </div>
+                                <p class="constructor-form-title">Аутригер</p>
+                                <div class="constructor-form__block">
+                                    <!-- таже история, что и выше была -->
+                                    <label class="form__block_el">
+                                        <input type="radio" name="outrigger" checked value="Лапы внахлест">
+                                        <div class="form__block_el_content">
+                                            Лапы внахлест
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="outrigger" value="Стандартные опоры">
+                                        <div class="form__block_el_content">
+                                            Стандартные опоры
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="constructor-form--next-step button-default">
+                                    <a>Продолжить</a>
+                                </div>
+                            </div>
+                            <div class="constructor-form__confirm_construct">
+                                <p>Оставьте свои контакты и мы перезвоним вам с выгодным предложением</p>
+                                <input type="text" class="inputText-default" placeholder="Ваше имя">
+                                <input type="text" class="inputText-default mask_phone" placeholder="+7 (___) ___-__-__">
+                                <div class="constructor-form__confirm_construct__select_data">
+                                    <!-- ЕСЛИ ГДЕ-ТО 'ON' ВЫВОДИТСЯ - ЗНАЧИТ НЕ УКАЗАН VALUE -->
+                                    <div class="constructor-select_data__title">
+                                        <span id="carcase-out"></span>
+                                        <p id="chassis-out"></p>
+                                    </div>
+                                    <div class="constructor-select_data__content">
+                                        <div class="constructor-select_data__content_row">
+                                            <p>Двигатель</p>
+                                            <span id="engine-out"></span>
+                                        </div>
+                                        <div class="constructor-select_data__content_row">
+                                            <p>Вид трансмиссии</p>
+                                            <span id="transmission-out"></span>
+                                        </div>
+                                        <div class="constructor-select_data__content_row">
+                                            <p>Грузоподъёмность</p>
+                                            <span id="carrying-out"></span>
+                                        </div>
+                                        <div class="constructor-select_data__content_row">
+                                            <p>Грузоподъемность стрелы</p>
+                                            <span id="lifting-out"></span>
+                                        </div>
+                                        <div class="constructor-select_data__content_row">
+                                            <p>Длина стрелы</p>
+                                            <span id="length-out"></span>
+                                        </div>
+                                        <div class="constructor-select_data__content_row">
+                                            <p>Аутригер</p>
+                                            <span id="outrigger-out"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit">отправить</button>
+                                <span class="deal">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих <a href="#">персональных данных.</a></span>
+                            </div>
+                            <!-- хз когда он выводится, но чтобы проверить style="display: flex;" -->
+                            <div class="constructor-form__sucsesfull">
+                                <img src="assets/icons/sucsesfull.svg" alt="">
+                                <span>СПАСИБО</span>
+                                <p>Наш менеджер перезвонит Вам в ближайшее время и ответит на все интересующие вас вопросы</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="footer_wrap">
+                <div class="footer_wrap_content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/icons/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer_wrap__nav">
+                        <a href="catalog.hmtl">Каталог</a>
+                        <a href="news.html">Новости</a>
+                        <a href="auctions">Аукционы</a>
+                        <a href="company.html">Компания</a>
+                        <a href="managers.html">Менеджеры</a>
+                        <a href="reviews">Отзывы</a>
+                        <a href="constructor.html">Конструктор</a>
+                        <a href="contacts.html">Контакты</a>
+                    </div>
+                    <div class="contacts-block">
+                        <div class="contacts-block_el contacts-phone">
+                            <a href="tel:+78004553430">8 (800) 455-34-30</a>
+                        </div>
+                        <div class="contacts-block_el contacts-email">
+                            <a href="mailto:info@progruzovicov.ru">info@progruzovicov.ru</a>
+                        </div>
+                        <div class="contacts-block_el">
+                            <div class="links-social">
+                                <a href="#" class="link-social--telegram">
+                                    <img src="assets/icons/telegram.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="assets/icons/wa.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="assets/icons/youtube.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="studio">
+                    Сделано с любовью в — <a href="https://3387studio.ru/">&nbsp;33/87 studio</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal-linksMenu">
+            <div class="modal-linksMenu_wrap">
+                <div class="modal-linksMenu_wrap__links">
+                    <a href="#">Каталог</a>
+                    <a href="#">Конструктор</a>
+                    <a href="#">Аукционы</a>
+                    <a href="#">Компания</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Менеджеры</a>
+                    <a href="#">Новости</a>
+                    <a href="#">Отзывы</a>
+                </div>
+                <div class="contacts-block">
+                    <div class="contacts-block_el contacts-email">
+                        <span>почта</span>
+                        <a href="mailto:info@progruzovicov.ru">info@progruzovicov.ru</a>
+                    </div>
+                    <div class="contacts-block_el contacts-phone">
+                        <span>Телефон</span>
+                        <a href="tel:+78004553430">8 (800) 455-34-30</a>
+                    </div>
+                    <div class="contacts-block_el">
+                        <span>Мы в соцсетях</span>
+                        <div class="links-social">
+                            <a href="#" class="link-social--telegram">
+                                <img src="assets/icons/telegram.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="assets/icons/wa.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="assets/icons/youtube.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.maskedinput.js"></script>
+        <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
+        <script type="text/javascript" src="assets/js/app.js"></script>
+    </body>
+</html>

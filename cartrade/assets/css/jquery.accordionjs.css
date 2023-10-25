@@ -1,0 +1,161 @@
+.accordionjs, .accordionjs * {
+  -webkit-box-sizing                    : border-box !important;
+  -moz-box-sizing                       : border-box !important;
+  box-sizing                            : border-box !important;
+}
+
+/*
+** The main <UL> element holding the tabs.
+*/
+.accordionjs {
+  margin: 0 auto;
+  padding: 0;
+  max-height: 532px;
+  width: 100%;
+  overflow: hidden;
+  list-style: none;
+}
+
+  .accordionjs > li {
+    margin-right: -100%;
+    margin-bottom: 0px;
+    padding-left: 0;
+  }
+
+/*
+** The tabs of the accordion are made up of 3 main elements.
+** 1) <input radiobox />
+** 2) <div /> text title of the box
+** 3) <i>  FontAwesome styled checkbox to show the state.
+*/
+.accordionjs-select {
+  cursor: pointer;
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  margin: 0;
+  z-index: 1;
+}
+
+  .accordionjs-title span {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      align-items: center;
+      font-weight: 500;
+      font-size: 30px;
+      line-height: 39px;
+      color: #FFFFFF;
+      position: absolute;
+      top: 0;
+      height: 100%;
+      width: 100%;
+      white-space: nowrap;
+      margin-bottom: 20px; 
+      line-height: 40px;
+      /* Slider effect */
+      transform: rotate(-90deg);
+      -o-transform: rotate(-90deg);
+      -moz-transform: rotate(-90deg);
+      -webkit-transform: rotate(-90deg);
+      -ms-writing-mode: lr-bt;
+      filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3);
+  }
+  .accordionjs-title i {
+    transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    color                               : #ffffff;
+    margin-right                        : 10px;
+    font-size                           : 18px;
+  }
+/* END accordionjs-title rules */
+
+/* BEGIN accordionjs-content rules */
+.accordionjs-content {
+    background-color: #FFFFFF;
+    color: #1A2030;
+    height: 532px;
+    width: 100%;
+    padding: 39px 140px 39px 55px;
+    position: relative;
+    overflow: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.accordionjs-content h3 {
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 39px;
+  margin-bottom: 25px;
+}
+/* END accordionjs-content rules */
+
+.accordionjs > li,
+.accordionjs-title,
+.accordionjs-content,
+.accordionjs-separator {
+  float: left;
+}
+
+
+.accordionjs-select:checked ~ .accordionjs-separator {
+  margin-right: 1200px;
+  margin-bottom: 0px;
+}
+
+.accordionjs-title, .accordionjs-select  {
+    border-radius: 8px;
+    margin: 0 1px;
+    background-color: rgba(32, 103, 240, .3);
+    color: #ffffff;
+    width: 102px; 
+    height: 500px;
+    font-size: 15px;
+}
+
+.accordionjs-select ~ .accordionjs-content{
+  opacity: 0;
+}
+
+/* Dark-Blue colour for currently active steps. */
+.accordionjs-select:hover ~ .accordionjs-title, .accordionjs-select:checked ~ .accordionjs-title {
+    background-color: #2067F0;
+}
+
+.accordionjs-select:checked ~ .accordionjs-content {
+  opacity: 1;
+}
+
+
+/* Dark-Red colour for disabled steps. */
+.accordionjs-select:disabled ~ .accordionjs-title {
+    background-color: #942E2E;
+}
+
+.accordionjs > li, .accordionjs-title {
+    position: relative;
+}
+
+.accordionjs-separator {
+    transition: margin 0.3s ease 0.1s;
+    -o-transition: margin 0.3s ease 0.1s;
+    -moz-transition: margin 0.3s ease 0.1s;
+    -webkit-transition: margin 0.3s ease 0.1s;
+}
+
+.jobStep {
+  position: absolute;
+  right: 0;
+  font-weight: 500;
+  font-size: 30px;
+  line-height: 39px;
+  color: #FFFFFF;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}

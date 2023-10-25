@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-decoration: none;
+    line-height: 120%;
+}
+
+.header {
+    padding: 25px 0;
+}
+
+.header > div {
+    display: flex;
+}
+
+.header a {
+    margin: auto;
+    color: #000000;
+}
+
+h1 {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 84px;
+}
+
+.header__number > a {
+    margin: auto 0 auto auto;
+    font-size: 20px;
+    font-weight: bold;
+    right: 0;
+    text-transform: capitalize;
+
+}
+
+.slick_slider img {
+    max-width: 100%;
+}
+
+.title {
+    position: absolute;
+    top: 0;
+}
+
+.title > div {
+    margin: auto;
+}
+
+.about {
+    margin: 150px 0;
+}
+
+.about img {
+    width: 100%;
+}
+
+.about p {
+    
+    line-height: 28px;  
+}
+
+h2 {
+    font-weight: bold;
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+#advantage {
+    background-color: #EEEEEE;
+}
+
+.advantage {
+    padding: 70px 0;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 28px;
+    margin: 30px 0 11px;
+}
+
+.advantage p {
+    font-size: 16px;
+    line-height: 16px;
+}
+
+.product {
+    margin: 150px 0;
+}
+
+.product img {
+    width: 100%;
+}
+
+
+.product_items > div {
+    margin: 0 15px 30px 0;
+    background-color: #EEEEEE;
+}
+
+.product_items h3 {
+    padding: 0 0 30px 23px;
+}
+
+#footer {
+    background-color: #EEEEEE;
+}

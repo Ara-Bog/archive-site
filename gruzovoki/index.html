@@ -1,0 +1,848 @@
+<!DOCTYPE HTML PUBLIC>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width,user-scalable=no,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="assets/css/fonts.css">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="assets/css/ion.rangeSlider.min.css">
+        <link rel="stylesheet" href="assets/css/main.css">
+    </head>
+    <body>
+        <section class="menu">
+            <div class="menu_wrap">
+                <div class="logo">
+                    <a href="index.html" >
+                        <img src="assets/icons/logo.png" alt="">
+                    </a>
+                </div>
+                <div class="menu_wrap__nav menu-close">
+                    <div class="menu_wrap__nav__links">
+                        <a href="#">Каталог</a>
+                        <a href="#">Конструктор</a>
+                        <a href="#">Аукционы</a>
+                        <a href="#">Компания</a>
+                        <a href="#">Менеджеры</a>
+                        <a href="#">Новости</a>
+                    </div>
+
+                    <div class="menu_wrap__nav__button"> 
+                        <!-- menu-open/menu-close -->
+                        <div class="menu_wrap__nav__button-open">
+                            <img src="assets/icons/burger.png" alt="">
+                        </div>
+                        <div class="menu_wrap__nav__button-close">
+                            <img src="assets/icons/cross.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- dodelat -->
+        <section class="welcome">
+            <div class="welcome_wrap">
+                <div class="welcome_wrap__title">
+                    <h2><span>Спецтехника</span>с аукционов <br> японии</h2>
+                    <a href="#" class="welcome_wrap__title_more">
+                        <img src="assets/icons/arrow.png" alt="">
+                        <span>Подробнее</span>
+                    </a>
+                </div>
+                <!-- <div class="logo_animate">
+                    <img src="assets/img/bg_logo.jpg" alt="">
+                    <div class="logo_animate_cars">
+                        <img src="assets/img/animation logo/car1.png" alt="">
+                        <img src="assets/img/animation logo/car2.png" alt="">
+                        <img src="assets/img/animation logo/car3.png" alt="">
+                        <img src="assets/img/animation logo/car4.png" alt="">
+                        <img src="assets/img/animation logo/car5.png" alt="">
+                        <img src="assets/img/animation logo/car6.png" alt="">
+                    </div>
+                </div> -->
+                <div class="welcome_wrap-filter"></div>
+            </div>
+        </section>
+
+        <!-- ТУТ ОБРАТИ ВНИМАНИЕ НА БЛОК constructor-form__listCars -->
+        <section class="constructor">
+            <div class="constructor_wrap">
+                <h3>Выбирайте сами, каким будет ваш транспорт</h3>
+                <div class="constructor_wrap_content">
+                    <!-- сделать нормальное сияние (вроде сделал) -->
+                    <div class="constructor_wrap__car">
+                        <img src="assets/img/construcror_car.png" alt="">
+                        <div class="constructor_wrap__car--glow">
+                            <img src="assets/icons/glov_car.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="constructor_wrap__content">
+                        <div class="constructor_wrap__type">
+                            <span id="japan" class="constructor_wrap__type--active">Японская техника</span>
+                            <span id="korea">корейская техника</span>
+                        </div>
+                        <div class="constructor_wrap__steps">
+                            <span id="chassis" class="constructor_wrap__steps--active">шасси</span>
+                            <span id="carcase">Кузов</span>
+                            <span id="confirm_construct">отправить</span>
+                        </div>
+                        <form action="" class="constructor-form form-active_step--chassis form-active_type--japan">
+                            <div class="constructor-form__chassis">
+                                <!-- посмотри этот блок, когда тест в несколько строк -->
+                                <div class="constructor-form__listCars">
+                                    <!-- for для label и id для input надо еще -->
+                                    <!-- не стал добавлять, т.к. ты всеравно переделывать будешь -->
+                                    <!-- добавил idшники, чтобы фильтровать по типу-->
+                                    <!-- такая хрень проканает и с другими блоками (если это будет необходимо) -->
+                                    <!-- value ОБЯЗАТЕЛЕН!!!! -->
+                                    <label id="constructor-type--japan" class="listCars_el">
+                                        <input type="radio" name="chassis" checked value="NPR 400 jap">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>NPR 400 jap</span>
+                                        </div>
+                                    </label>
+                                    <label id="constructor-type--japan" class="listCars_el">
+                                        <input type="radio" name="chassis" value="NQR 500 SWB jap">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>NQR 500 SWB jap</span>
+                                        </div>
+                                    </label>
+                                    <label id="constructor-type--japan" class="listCars_el">
+                                        <input type="radio" name="chassis" value="NQR 500 SWB jap">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>NQR 500 SWB jap</span>
+                                        </div>
+                                    </label>
+                                    <label id="constructor-type--japan" class="listCars_el">
+                                        <input type="radio" name="chassis" value="NQR 500 SWB jap">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>NQR 500 SWB jap</span>
+                                        </div>
+                                    </label>
+
+                                    <label id="constructor-type--korea" class="listCars_el">
+                                        <input type="radio" name="chassis" value="NQR 500 SWB kor">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>NQR 500 SWB kor</span>
+                                        </div>
+                                    </label>
+                                    <label id="constructor-type--korea" class="listCars_el">
+                                        <input type="radio" name="chassis" value="NQR 500 SWB kor">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>NQR 500 SWB kor</span>
+                                        </div>
+                                    </label>
+                                    <label id="constructor-type--korea" class="listCars_el">
+                                        <input type="radio" name="chassis" value="NQR 500 SWB kor">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>NQR 500 SWB kor</span>
+                                        </div>
+                                    </label>
+                                    <label id="constructor-type--korea" class="listCars_el">
+                                        <input type="radio" name="chassis" value="NQR 500 SWB kor">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>NQR 500 SWB kor</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <p class="constructor-form-title">Двигатель</p>
+                                <div class="constructor-form__block">
+                                    <!-- таже история, что и выше была -->
+                                    <label class="form__block_el" id="constructor-type--japan">
+                                        <input type="radio" name="engine" checked value="Mitsubishi 4G6">
+                                        <div class="form__block_el_content">
+                                            Mitsubishi 4G6
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el" id="constructor-type--japan">
+                                        <input type="radio" name="engine" value="Honda D15B">
+                                        <div class="form__block_el_content">
+                                            Honda D15B
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el" id="constructor-type--japan">
+                                        <input type="radio" name="engine" value="Toyota 3S-FE">
+                                        <div class="form__block_el_content">
+                                            Toyota 3S-FE
+                                        </div>
+                                    </label>
+
+                                    <!-- для теста -->
+                                    <label class="form__block_el" id="constructor-type--korea">
+                                        <input type="radio" name="engine" value="qwe">
+                                        <div class="form__block_el_content">
+                                            qwe
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el" id="constructor-type--korea">
+                                        <input type="radio" name="engine" value="asd">
+                                        <div class="form__block_el_content">
+                                            asd
+                                        </div>
+                                    </label>
+                                </div>
+                                <p class="constructor-form-title">Вид трансмиссии</p>
+                                <div class="constructor-form__block">
+                                    <!-- таже история, что и выше была -->
+                                    <label class="form__block_el">
+                                        <input type="radio" name="transmission" checked value="Электрический">
+                                        <div class="form__block_el_content">
+                                            Электрический
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="transmission" value="Механический">
+                                        <div class="form__block_el_content">
+                                            Механический
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="transmission" value="Гидравлический">
+                                        <div class="form__block_el_content">
+                                            Гидравлический
+                                        </div>
+                                    </label>
+                                </div>
+                                <p class="constructor-form-title">Грузоподъёмность</p>
+                                <div class="constructor-form__block">
+                                    <!-- таже история, что и выше была -->
+                                    <label class="form__block_el">
+                                        <input type="radio" name="carrying" value="До 10 Т" checked>
+                                        <div class="form__block_el_content">
+                                            До 10 Т
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="carrying" value="20 Т">
+                                        <div class="form__block_el_content">
+                                            20 Т
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="carrying" value="30 Т">
+                                        <div class="form__block_el_content">
+                                            30 Т
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="carrying" value="40 Т">
+                                        <div class="form__block_el_content">
+                                            40 Т
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="constructor-form--next-step button-default">
+                                    <a>Продолжить</a>
+                                </div>
+                            </div>
+                            <div class="constructor-form__carcase">
+                                <!-- посмотри этот блок, когда тест в несколько строк -->
+                                <div class="constructor-form__listCars">
+                                    <!-- for для label и id для input надо еще -->
+                                    <!-- не стал добавлять, т.к. ты всеравно переделывать будешь -->
+                                    <label class="listCars_el">
+                                        <input type="radio" name="carcase" value="Промтоварный" checked>
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>Промтоварный</span>
+                                        </div>
+                                    </label>
+                                    <label class="listCars_el">
+                                        <input type="radio" name="carcase" value="Бортовой">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>Бортовой</span>
+                                        </div>
+                                    </label>
+                                    <label class="listCars_el">
+                                        <input type="radio" name="carcase" value="вакуумная">
+                                        <div class="listCars_el_content">
+                                            <img src="assets/img/carList_el.png" alt="">
+                                            <span>вакуумная</span>
+                                        </div>
+                                    </label>
+                                </div>
+                                <p class="constructor-form-title">грузоподъемность стрелы</p>
+                                <div class="constructor-form__block">
+                                    <!-- таже история, что и выше была -->
+                                    <label class="form__block_el">
+                                        <input type="radio" name="lifting" value="1.5 Т" checked>
+                                        <div class="form__block_el_content">
+                                            1.5 Т
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="lifting" value="3 Т">
+                                        <div class="form__block_el_content">
+                                            3 Т
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="lifting" value="6 Т">
+                                        <div class="form__block_el_content">
+                                            6 Т
+                                        </div>
+                                    </label>
+                                </div>
+                                <p class="constructor-form-title">дЛИНА СТРЕЛЫ</p>
+                                <div class="constructor-form__block">
+                                    <!-- таже история, что и выше была -->
+                                    <label class="form__block_el">
+                                        <input type="radio" name="length" value="5 М" checked>
+                                        <div class="form__block_el_content">
+                                            5 М
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="length" value="10 М">
+                                        <div class="form__block_el_content">
+                                            10 М
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="length" value="15 М">
+                                        <div class="form__block_el_content">
+                                            15 М
+                                        </div>
+                                    </label>
+                                </div>
+                                <p class="constructor-form-title">Аутригер</p>
+                                <div class="constructor-form__block">
+                                    <!-- таже история, что и выше была -->
+                                    <label class="form__block_el">
+                                        <input type="radio" name="outrigger" checked value="Лапы внахлест">
+                                        <div class="form__block_el_content">
+                                            Лапы внахлест
+                                        </div>
+                                    </label>
+                                    <label class="form__block_el">
+                                        <input type="radio" name="outrigger" value="Стандартные опоры">
+                                        <div class="form__block_el_content">
+                                            Стандартные опоры
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="constructor-form--next-step button-default">
+                                    <a>Продолжить</a>
+                                </div>
+                            </div>
+                            <div class="constructor-form__confirm_construct">
+                                <p>Оставьте свои контакты и мы перезвоним вам с выгодным предложением</p>
+                                <input type="text" class="inputText-default" placeholder="Ваше имя">
+                                <input type="text" class="inputText-default mask_phone" placeholder="+7 (___) ___-__-__">
+                                <div class="constructor-form__confirm_construct__select_data">
+                                    <!-- ЕСЛИ ГДЕ-ТО 'ON' ВЫВОДИТСЯ - ЗНАЧИТ НЕ УКАЗАН VALUE -->
+                                    <div class="constructor-select_data__title">
+                                        <span id="carcase-out"></span>
+                                        <p id="chassis-out"></p>
+                                    </div>
+                                    <div class="constructor-select_data__content">
+                                        <div class="constructor-select_data__content_row">
+                                            <p>Двигатель</p>
+                                            <span id="engine-out"></span>
+                                        </div>
+                                        <div class="constructor-select_data__content_row">
+                                            <p>Вид трансмиссии</p>
+                                            <span id="transmission-out"></span>
+                                        </div>
+                                        <div class="constructor-select_data__content_row">
+                                            <p>Грузоподъёмность</p>
+                                            <span id="carrying-out"></span>
+                                        </div>
+                                        <div class="constructor-select_data__content_row">
+                                            <p>Грузоподъемность стрелы</p>
+                                            <span id="lifting-out"></span>
+                                        </div>
+                                        <div class="constructor-select_data__content_row">
+                                            <p>Длина стрелы</p>
+                                            <span id="length-out"></span>
+                                        </div>
+                                        <div class="constructor-select_data__content_row">
+                                            <p>Аутригер</p>
+                                            <span id="outrigger-out"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button type="submit">отправить</button>
+                                <span class="deal">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих <a href="#">персональных данных.</a></span>
+                            </div>
+                            <!-- хз когда он выводится, но чтобы проверить style="display: flex;" -->
+                            <div class="constructor-form__sucsesfull">
+                                <img src="assets/icons/sucsesfull.svg" alt="">
+                                <span>СПАСИБО</span>
+                                <p>Наш менеджер перезвонит Вам в ближайшее время и ответит на все интересующие вас вопросы</p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="info">
+            <div class="info_wrap">
+                <div class="swiper swiper_info">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="swiper-slide_wrap">
+                                <h4>Вся техника официально ставится на учет</h4>
+                                <p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем массового участия</p> 
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide_wrap">
+                                <h4>Привезем любой вид техники</h4>
+                                <p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем массового участия</p>    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide_wrap">
+                                <h4>Если на рынке нет нужной техники, мы ее соберем</h4>
+                                <p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем массового участия</p>    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide_wrap">
+                                <h4>Не являемся посредниками ни на одном из этапов</h4>
+                                <p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем массового участия</p>    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide_wrap">
+                                <h4>Работаем с 2010 года</h4>
+                                <p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем массового участия</p>    
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="swiper-slide_wrap">
+                                <h4>Прозрачная цепочка этапов поставки</h4>
+                                <p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем массового участия</p> 
+                                <div class="swiper-button">
+                                    <a>больше о компании</a>
+                                </div>   
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-buttons">
+                        <div class="swiper-button-prev swiper_info-button-prev"></div>
+                        <div class="swiper-button-next swiper_info-button-next"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="info_wrap_img">
+                    <img src="assets/img/track.jpg" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section class="schema">
+            <div class="schema_wrap">
+                <div class="schema_wrap__text">
+                    <h1>Схема работы</h1>
+                    <p>Задача организации, в особенности же реализация намеченных плановых заданий позволяет выполнять важные задания по разработке систем массового участия</p>
+                    <a href="#" class="download_file" download="Пример договора">пример договора</a>
+                </div>
+                <div class="schema_wrap__points">
+                    <div class="schema_wrap__points-number">1</div>
+                    <div class="schema_wrap__points-text">Обработка заявки</div>
+                    <div class="schema_wrap__points-number">2</div>
+                    <div class="schema_wrap__points-text">Поиск автомобиля</div>
+                    <div class="schema_wrap__points-number">3</div>
+                    <div class="schema_wrap__points-text">Получение автомобиля</div>
+                    <div class="schema_wrap__points-number">4</div>
+                    <div class="schema_wrap__points-text">Доработка автомобиля</div>
+                    <div class="schema_wrap__points-number">5</div>
+                    <div class="schema_wrap__points-text">Подготовка автомобиля</div>
+                    <div class="schema_wrap__points-number">6</div>
+                    <div class="schema_wrap__points-text">Выдача автомобиля</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="offer-slider">
+            <div class="offer-slider_wrap">
+                <div class="offer-slider_wrap_title">
+                    <h1>Лучшие предложения</h1>
+                </div>
+                <div class="swiper swiper_offer">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#" class="card_car">
+                                <div class="card_car__img">
+                                    <img src="assets/img/car-1.jpg" alt="">
+                                </div>
+                                <div class="card_car__info">
+                                    <span class="card_car-name">Isuzu Forward</span>
+                                    <p class="card_car-char">17 450 км Промтоварный 2020 Бензин</p>
+                                    <span class="card_car-price">5 680 000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="card_car">
+                                <div class="card_car__img">
+                                    <img src="assets/img/car-2.jpg" alt="">
+                                </div>
+                                <div class="card_car__info">
+                                    <span class="card_car-name">JAC N120</span>
+                                    <p class="card_car-char">17 450 км Промтоварный 2020 Бензин 17 450 км Промтоварный 2020</p>
+                                    <span class="card_car-price">5 140 000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="card_car">
+                                <div class="card_car__img">
+                                    <img src="assets/img/car-3.jpg" alt="">
+                                </div>
+                                <div class="card_car__info">
+                                    <span class="card_car-name">Hino Series 500</span>
+                                    <p class="card_car-char">17 450 км Промтоварный 2020 Бензин</p>
+                                    <span class="card_car-price">11 320 000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="card_car">
+                                <div class="card_car__img">
+                                    <img src="assets/img/car-1.jpg" alt="">
+                                </div>
+                                <div class="card_car__info">
+                                    <span class="card_car-name">Isuzu Forward</span>
+                                    <p class="card_car-char">17 450 км Промтоварный 2020 Бензин</p>
+                                    <span class="card_car-price">5 680 000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="card_car">
+                                <div class="card_car__img">
+                                    <img src="assets/img/car-2.jpg" alt="">
+                                </div>
+                                <div class="card_car__info">
+                                    <span class="card_car-name">JAC N120</span>
+                                    <p class="card_car-char">17 450 км Промтоварный 2020 Бензин 17 450 км Промтоварный 2020</p>
+                                    <span class="card_car-price">5 140 000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="card_car">
+                                <div class="card_car__img">
+                                    <img src="assets/img/car-3.jpg" alt="">
+                                </div>
+                                <div class="card_car__info">
+                                    <span class="card_car-name">Hino Series 500</span>
+                                    <p class="card_car-char">17 450 км Промтоварный 2020 Бензин</p>
+                                    <span class="card_car-price">11 320 000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="card_car">
+                                <div class="card_car__img">
+                                    <img src="assets/img/car-1.jpg" alt="">
+                                </div>
+                                <div class="card_car__info">
+                                    <span class="card_car-name">Isuzu Forward</span>
+                                    <p class="card_car-char">17 450 км Промтоварный 2020 Бензин</p>
+                                    <span class="card_car-price">5 680 000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="card_car">
+                                <div class="card_car__img">
+                                    <img src="assets/img/car-2.jpg" alt="">
+                                </div>
+                                <div class="card_car__info">
+                                    <span class="card_car-name">JAC N120</span>
+                                    <p class="card_car-char">17 450 км Промтоварный 2020 Бензин 17 450 км Промтоварный 2020</p>
+                                    <span class="card_car-price">5 140 000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="card_car">
+                                <div class="card_car__img">
+                                    <img src="assets/img/car-3.jpg" alt="">
+                                </div>
+                                <div class="card_car__info">
+                                    <span class="card_car-name">Hino Series 500</span>
+                                    <p class="card_car-char">17 450 км Промтоварный 2020 Бензин</p>
+                                    <span class="card_car-price">11 320 000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="card_car">
+                                <div class="card_car__img">
+                                    <img src="assets/img/car-1.jpg" alt="">
+                                </div>
+                                <div class="card_car__info">
+                                    <span class="card_car-name">Isuzu Forward</span>
+                                    <p class="card_car-char">17 450 км Промтоварный 2020 Бензин</p>
+                                    <span class="card_car-price">5 680 000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="card_car">
+                                <div class="card_car__img">
+                                    <img src="assets/img/car-2.jpg" alt="">
+                                </div>
+                                <div class="card_car__info">
+                                    <span class="card_car-name">JAC N120</span>
+                                    <p class="card_car-char">17 450 км Промтоварный 2020 Бензин 17 450 км Промтоварный 2020</p>
+                                    <span class="card_car-price">5 140 000</span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#" class="card_car">
+                                <div class="card_car__img">
+                                    <img src="assets/img/car-3.jpg" alt="">
+                                </div>
+                                <div class="card_car__info">
+                                    <span class="card_car-name">Hino Series 500</span>
+                                    <p class="card_car-char">17 450 км Промтоварный 2020 Бензин</p>
+                                    <span class="card_car-price">11 320 000</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="swiper-buttons">
+                        <div class="swiper_offer-button-prev"></div>
+                        <div class="swiper_offer-button-next"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <a href="catalog.html" class="link-default">в каталог</a>
+            </div>
+        </section>
+
+        <section class="questions">
+            <div class="questions_wrap">
+                <div class="questions_wrap__text">
+                    <h1>Остались вопросы?</h1>
+                    <p>Оставьте свои контакты и мы перезвоним вам с выгодным предложением</p>
+                </div>
+                <form action="" class="question-form">
+                    <div class="question-form__inputs">
+                        <input type="text" class="inputText-default" placeholder="Ваше имя">
+                        <input type="text" class="inputText-default mask_phone" placeholder="+7 (___) ___-__-__">
+                    </div>
+                    <button type="submit">Отправить</button>
+                    <span class="deal">Нажимая на кнопку «Отправить», вы даете согласие на обработку своих <a href="#">персональных данных.</a></span>
+                </form>
+            </div>
+        </section>
+
+        <section class="reviews">
+            <div class="reviews_wrap">
+                <h1>Клиенты о нас</h1>
+                <div class="swiper swiper_reviews">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="review_item">
+                                <div class="review_item__content">
+                                    <span class="review_item__content__car">Isuzu Forward</span>
+                                    <p class="review_item__content__text">Автомобиль привезен в августе 2021 года, после получения автомобиля на него был установлен манипулятор и подъемник</p>
+                                    <span class="review_item__content__client">Алексей Фролов</span>
+                                    <span class="review_item__content__job">Гениральный директор ООО “Профимпорт”</span>
+                                </div>
+                                <div class="video-element">
+                                    <video>
+                                        <!-- тут нужно добавлять видосы в нескольких форматах (хз зачем) -->
+                                        <source src="assets/videos/test.MOV"></source>
+                                    </video>
+                                    <div class="video-element-play">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review_item">
+                                <div class="review_item__content">
+                                    <span class="review_item__content__car">Isuzu Forward</span>
+                                    <p class="review_item__content__text">Автомобиль привезен в августе 2021 года, после получения автомобиля на него был установлен манипулятор и подъемник</p>
+                                    <span class="review_item__content__client">Алексей Фролов</span>
+                                    <span class="review_item__content__job">Гениральный директор ООО “Профимпорт”</span>
+                                </div>
+                                <div class="video-element">
+                                    <video>
+                                        <!-- тут нужно добавлять видосы в нескольких форматах (хз зачем) -->
+                                        <source src="assets/videos/test.MOV"></source>
+                                    </video>
+                                    <div class="video-element-play">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="review_item">
+                                <div class="review_item__content">
+                                    <span class="review_item__content__car">Isuzu Forward</span>
+                                    <p class="review_item__content__text">Автомобиль привезен в августе 2021 года, после получения автомобиля на него был установлен манипулятор и подъемник</p>
+                                    <span class="review_item__content__client">Алексей Фролов</span>
+                                    <span class="review_item__content__job">Гениральный директор ООО “Профимпорт”</span>
+                                </div>
+                                <div class="video-element">
+                                    <video>
+                                        <!-- тут нужно добавлять видосы в нескольких форматах (хз зачем) -->
+                                        <source src="assets/videos/test.MOV"></source>
+                                    </video>
+                                    <div class="video-element-play">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                </div>
+                <div class="swiper-buttons">
+                    <div class="swiper-button-prev swiper_reviews-button-prev"></div>
+                    <div class="swiper-button-next swiper_reviews-button-next"></div>
+                </div>
+                <div class="button-default">
+                    <a href="reviews.hmtl">Все отзывы</a>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="videos">
+            <div class="videos_wrap">
+                <div class="videos_wrap__text">
+                    <h1>Видеообзоры</h1>
+                    <div class="videos_wrap__text_dictription">
+                        <p>Автомобиль привезен в августе 2021 года, после получения автомобиля на него был установлен манипулятор и подъемник</p>
+                    </div>
+                </div>
+                <div class="videos_wrap__content">
+                    <!-- хз, мб тут ссылки на ролики ютуба должны быть -->
+                    <div class="video-element">
+                        <video>
+                            <!-- тут нужно добавлять видосы в нескольких форматах (хз зачем) -->
+                            <source src="assets/videos/test.MOV"></source>
+                        </video>
+                        <div class="video-element-play">
+                        </div>
+                    </div>
+                    <div class="video-element">
+                        <video>
+                            <!-- тут нужно добавлять видосы в нескольких форматах (хз зачем) -->
+                            <source src="assets/videos/test.MOV"></source>
+                        </video>
+                        <div class="video-element-play">
+                        </div>
+                    </div>
+                </div>
+                <div class="button-default">
+                    <a href="https://youtube.com">Больше на YOUTUBE</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="footer">
+            <div class="footer_wrap">
+                <div class="footer_wrap_content">
+                    <div class="logo">
+                        <a href="index.html">
+                            <img src="assets/icons/logo.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer_wrap__nav">
+                        <a href="catalog.hmtl">Каталог</a>
+                        <a href="news.html">Новости</a>
+                        <a href="auctions">Аукционы</a>
+                        <a href="company.html">Компания</a>
+                        <a href="managers.html">Менеджеры</a>
+                        <a href="reviews">Отзывы</a>
+                        <a href="constructor.html">Конструктор</a>
+                        <a href="contacts.html">Контакты</a>
+                    </div>
+                    <div class="contacts-block">
+                        <div class="contacts-block_el contacts-phone">
+                            <a href="tel:+78004553430">8 (800) 455-34-30</a>
+                        </div>
+                        <div class="contacts-block_el contacts-email">
+                            <a href="mailto:info@progruzovicov.ru">info@progruzovicov.ru</a>
+                        </div>
+                        <div class="contacts-block_el">
+                            <div class="links-social">
+                                <a href="#" class="link-social--telegram">
+                                    <img src="assets/icons/telegram.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="assets/icons/wa.png" alt="">
+                                </a>
+                                <a href="#">
+                                    <img src="assets/icons/youtube.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="studio">
+                    Сделано с любовью в — <a href="https://3387studio.ru/">&nbsp;33/87 studio</a>
+                </div>
+            </div>
+        </section>
+
+        <div class="modal-linksMenu">
+            <div class="modal-linksMenu_wrap">
+                <div class="modal-linksMenu_wrap__links">
+                    <a href="#">Каталог</a>
+                    <a href="#">Конструктор</a>
+                    <a href="#">Аукционы</a>
+                    <a href="#">Компания</a>
+                    <a href="#">Контакты</a>
+                    <a href="#">Менеджеры</a>
+                    <a href="#">Новости</a>
+                    <a href="#">Отзывы</a>
+                </div>
+                <div class="contacts-block">
+                    <div class="contacts-block_el contacts-email">
+                        <span>почта</span>
+                        <a href="mailto:info@progruzovicov.ru">info@progruzovicov.ru</a>
+                    </div>
+                    <div class="contacts-block_el contacts-phone">
+                        <span>Телефон</span>
+                        <a href="tel:+78004553430">8 (800) 455-34-30</a>
+                    </div>
+                    <div class="contacts-block_el">
+                        <span>Мы в соцсетях</span>
+                        <div class="links-social">
+                            <a href="#" class="link-social--telegram">
+                                <img src="assets/icons/telegram.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="assets/icons/wa.png" alt="">
+                            </a>
+                            <a href="#">
+                                <img src="assets/icons/youtube.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <script type="text/javascript" src="assets/js/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="assets/js/jquery.maskedinput.js"></script>
+        <script type="text/javascript" src="assets/js/swiper-bundle.min.js"></script>
+        <!-- ВОТ ЭТОТ ФАЙЛ ТОЛЬКО НА ГЛАВНОЙ И НА КАТАЛОГЕ ЕСТЬ, (НУЖЕН ТОЛЬКО НА КАТАЛОГЕ). -->
+        <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
+        <!-- КАТАЛОГ ПОСЛЕДНИМ ДЕЛАЛ, ТАК ЧТО ДОКИНЬ ВЕЗДЕ -->
+        <script type="text/javascript" src="assets/js/app.js"></script>
+    </body>
+</html>

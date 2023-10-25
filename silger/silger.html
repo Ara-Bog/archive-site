@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="css/fotorama.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+        <link rel="stylesheet" href="css/jquery-ui.css">
+        <link rel="stylesheet" href="js/libs/slick-theme.css">
+        <link rel="stylesheet" href="js/libs/slick.css">
+    </head>
+    <body>
+        <section class="menu">
+            <div class="menu_row">
+                <div class="menu__logo">
+                    <a href="#">
+                        <img src="assets/icons/logo.svg" alt="logo">
+                    </a>
+                </div>
+                <div class="menu__content">
+                    <div class="cross">
+                        <img src="assets/icons/cross.svg" alt="">
+                    </div>
+                    <div class="menu_link">
+                        <div class="menu_link__base">
+                            Базы
+                            <div class="base_link">
+                                <a href="silger-1">Silger 1</a>
+                                <a href="silger-2">Silger 2</a>
+                            </div>
+                        </div>
+                        <div class="menu_link__price">
+                            Цены
+                            <div class="price_link">
+                                <a href="silger-1#price">Silger1</a>
+                                <a href="silger-2#price">Silger2</a>
+                            </div>
+                        </div>
+                        <a class="silger_link" href="silger-1">Silger 1</a>
+                        <a class="silger_link" href="silger-2">Silger 2</a>
+                        <a href="#rules">Правила проживания</a>
+                        <a href="#contact">Контакты</a>
+                    </div>
+                    <div class="feedback">
+                        <a href="tel:8 (800) 775-20-10" class="feedback_number">8 (800) 775-20-10</a>
+                        <div>
+                            <a class="reserv_call">Заказать звонок</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sandwich">
+                    <img src="assets/icons/burger.svg" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="header_page">
+            <img src="assets/img/silger1_main.jpg" alt="Silger 1">
+            <div class="silger_page_block">
+                <h1>Silger 1</h1>
+            </div>
+        </section>
+        <section class="location">
+            <div class="location_block">
+                <div id="location_silger" class="location_silger"></div>
+                <div class="location__text">
+                    <h3>Расположение</h3>
+                    <p>База отдыха расположена в п. Ливадии ул.Заводская 34 (район первого пляжа), на берегу озера Ливадийское, в 400-та метрах от моря. В шаговой доступности кафе, магазины, рынок.</p>
+                    <a href="https://yandex.ru/maps/-/CKuQfP-h">Построить маршрут</a>
+                </div>
+            </div>
+        </section>
+        <section class="slider">
+            <div class="slider_block">
+                <div class="slider__text">
+                    <h3>Все самое необходимое </h3>
+                    <p>Для комфортного отдыха на территории базы имеются 2 бассейна с пресной водой, детская площадка, батуты, шезлонги, мангалы, чистый песчаный пляж, охраняемая парковка </p>
+                    <div class="button_slider"></div>
+                </div>
+                <div class="slider__img">
+                    <div><img src="img/slider_1.jpg" alt=""></div>
+                    <div><img src="img/slider_2.jpg" alt=""></div>
+                    <div><img src="img/slider_3.jpg" alt=""></div>
+                    <div><img src="img/slider_4.jpg" alt=""></div>
+                    <div><img src="img/slider_5.jpg" alt=""></div>
+                </div>
+            </div>
+        </section>
+        <section class="catalog">
+            <div class="catalog_block">
+                <h3>Апартаменты</h3>
+                <div class="catalog_items">
+                    <div class="item">
+                        <div class="item__img fotorama" data-loop="true" data-arrows="true" data-click="true" data-swipe="true" data-allowfullscreen="native" data-nav="thumbs">
+                            <img src="img/apart/five_pos/1.jpg" alt="">
+                            <img src="img/apart/five_pos/2.jpg" alt="">
+                            <img src="img/apart/five_pos/3.jpg" alt="">
+                        </div>
+                        <div class="item__text">
+                            <h4>5-ти местный</h4>
+                            <p>Площадь номера - 50 кв.м</p>
+                            <p>Вместимость номера - 4 человека</p>
+                            <p>Двуспальная кровать и две односпальные</p>
+                            <p>Душевая кабина, унитаз, умывальник, титан</p>
+                            <p>Веранда</p>
+                            <p>Холодильник</p>
+                            <p>Для приготовления пищи мы предоставляем: газовую плиту, кастрюля, сковорода, чайник, половник (остальную посуду вы берете свою), постельное белье (кроме полотенец).</p>
+                            <div>
+                                <a href="#" class="button reservation_button">Забронировать</a>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </section>
+        <section class="price">
+            <div class="price_block">
+                <h3>Цены</h3>
+                <div class="price__table">
+                    <div class="table-row table-title">
+                        <div>Апартаменты</div>
+                        <div>Стандарт</div>
+                        <div>Стандарт+</div>
+                        <div>5-ти местный</div>
+                    </div>
+                    <div class="table-row">
+                        <div>1 июн - 31 июн</div>
+                        <div>2000 &#8381</div>
+                        <div>2500 &#8381</div>
+                        <div>3000 &#8381</div>
+                    </div>
+                    <div class="table-row">
+                        <div>1 июл - 15 июл</div>
+                        <div>2000 &#8381</div>
+                        <div>2500 &#8381</div>
+                        <div>3000 &#8381</div>
+                    </div>
+                    <div class="table-row">
+                        <div>15 июл - 25 июл</div>
+                        <div>2000 &#8381</div>
+                        <div>2500 &#8381</div>
+                        <div>3000 &#8381</div>
+                    </div>
+                    <div class="table-row">
+                        <div>25 июл  - 25 авг</div>
+                        <div>2000 &#8381</div>
+                        <div>2500 &#8381</div>
+                        <div>3000 &#8381</div>
+                    </div>
+                    <div class="table-row">
+                        <div>25 авг - 10 сен</div>
+                        <div>2000 &#8381</div>
+                        <div>2500 &#8381</div>
+                        <div>3000 &#8381</div>
+                    </div>
+                    <div class="table-row">
+                        <div>10 сен - 31 сен</div>
+                        <div>2000 &#8381</div>
+                        <div>2500 &#8381</div>
+                        <div>3000 &#8381</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact" class="map">
+            <div class="panel">
+                <h3>Контакты</h3>
+                <div class="panel__contact">
+                    <a href="tel:8 (800) 7-752-010">8 (800) 775-20-10</a>
+                    <a href="https://www.instagram.com/silger_livadiya/">silger_livadiya</a>
+                </div>
+                <div class="panel__silger">
+                    <p>База отдыха “Silger 1”</p>
+                    <a href="#">Ливадия, ул. Заводская, 34</a>
+                    <a href="#">построить маршрут</a>
+                </div>
+                <div class="panel__silger">
+                    <p>База отдыха “Silger 2”</p>
+                    <a href="#">Ливадия, ул. Грушевая, 90</a>
+                    <a href="#">построить маршрут</a>
+                </div>
+            </div>
+            <div id="map"></div>
+        </section>
+        <section class="footer">
+            <div class="footer_block">
+                <div class="footer_block__logo">
+                    <a href="#">
+                        <img src="icons/logo_black.svg" alt="">
+                    </a>
+                    <p>© 2020 База отдыха “Sliger”</p>
+                </div>
+                <div class="footer_block__link">
+                    <a href="#rules">Правила проживания</a>
+                    <a href="#contact">Контакты</a>
+                </div>
+                <div class="footer_contact">
+                    <a href="tel:8 (800) 7-752-010">8 (800) 775-20-10</a>
+                    <a href="https://www.instagram.com/silger_livadiya/"></a>
+                    <p>Сделано с любовью в <a class="studio" href="https://3387studio.ru/">33/87 STUDIO</a></p>
+                </div>
+            </div>
+        </section>
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="js/fotorama.js"></script>
+        <script type="text/javascript" src="js/libs/slick.min.js"></script>
+        <script type="text/javascript" src="js/app.js"></script>
+        <script src="https://api-maps.yandex.ru/2.1/?apikey=8615f739-bdd2-409d-a96e-bf5c06776db9&lang=ru_RU" type="text/javascript"></script>
+        <script type="text/javascript" src="js/map/map_silger1.js"></script>
+        <script type="text/javascript" src="js/map/map_main_page.js"></script>
+    </body>
+</html>

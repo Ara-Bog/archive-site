@@ -1,0 +1,21 @@
+<form action="">
+                        <div class="button_regular button_regular--active">
+                            <button>Добавить в корзину</button>
+                        </div>
+                        <div class="product_wrap__description-count">
+                            <a class="product-count--minus"></a>
+                            <p>1 шт</p>
+                            <a class="product-count--plus"></a>
+                        </div>
+                        <h5>Наличе в магазинах</h5>
+                        <div class="product_wrap__description_storage">
+                            <div class="product_wrap__description_storage_item">
+                                <p>Владивосток</p>
+                                <span>В наличии</span>
+                            </div>
+                            <div class="product_wrap__description_storage_item storage_item--disabled">
+                                <p>Хабаровск</p>
+                                <span>Нет в наличии</span>
+                            </div>
+                        </div>
+                    </form>

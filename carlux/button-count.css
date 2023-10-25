@@ -1,0 +1,48 @@
+
+.product_wrap__description-count {
+    background-color: #FFD540;
+    border-radius: 80px;
+    display: flex;
+    padding: 17px 31.5px;
+    max-width: 217px;
+    width: 100%;
+    margin-right: auto;
+    margin-bottom: 40px;
+    justify-content: space-between;
+}
+
+.product_wrap__description-count a {
+    width: 16px;
+    height: 16px;
+    display: flex;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.product_wrap__description-count p {
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.product-count--minus {
+    background-image: url('../icons/basket-minus.svg');
+}
+
+.product-count--plus {
+    background-image: url('../icons/basket-plus.svg');
+}
+
+/* заменить */
+.product_wrap__description form .button_regular {
+    margin: 0 auto 15px 0;
+}
+
+/* media уже есть, в нее добавить */
+@media (max-width: 800px) {
+    .product_wrap__description-count {
+        width: unset;
+        margin-right: 0;
+        max-width: unset;
+        padding: 14px 64px;
+    }
+}
